@@ -1,5 +1,15 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
+  padding-top: 5rem;
   text-align: center;
+  height: 100vh;
+  background-color: rgb(228, 247, 255);
 }
 
 .App-logo {
@@ -35,4 +45,28 @@
   to {
     transform: rotate(360deg);
   }
+}
+h3{
+  padding-bottom: 2rem;
+}
+input[type="number"] {
+  margin-top: 2rem;
+  border: none;
+  background: transparent;
+  margin: 0;
+  padding: 7px 8px;
+  font-size: 14px;
+  color: inherit;
+  border: 1.5px solid rgb(165, 210, 255);;
+  border-radius: inherit;
+}
+
+input[type="number"]::placeholder {
+  color: rgba(2, 126, 251, 1);;
+}
+
+input[type="number"]:focus {
+  box-shadow: 0 0 1px 0 rgba(2, 126, 251, 1);
+  border-color: rgba(2, 126, 251, 1);;
+  outline: none;
 }

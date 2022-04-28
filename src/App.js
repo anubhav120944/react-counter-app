@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Counter from './ClassComponents/Counter';
+import Wrapper from './ClassComponents/Wrapper';
 
 function App() {
+
+  const [change,setChange] = useState(0);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h3>Enter the number from where you want to start the counter</h3>
+      <input onChange={(e)=>{setChange(e.target.value)}} type="number" name="number" id="" />
+      {/* <button onSubmit={}></button> */}
+      <Wrapper startFrom = {Number(change)} />
     </div>
   );
 }
