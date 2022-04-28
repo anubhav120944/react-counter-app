@@ -6,10 +6,9 @@
 }
 
 .App {
-  padding-top: 5rem;
   text-align: center;
   height: 100vh;
-  background-color: rgb(228, 247, 255);
+  background-color: rgba(2, 126, 251, 1);
 }
 
 .App-logo {
@@ -46,27 +45,53 @@
     transform: rotate(360deg);
   }
 }
-h3{
-  padding-bottom: 2rem;
+h5{
+  padding-top: 1rem;
+  font-size: 15px;
+}
+h2{
+  position: relative;
+  text-align: center;
+  color: black;
+  font-size: 40px;
+  padding-top: 1rem;
+}
+/* .title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+} */
+.title::before {
+  /* padding-top: 2px; */
+  content: "";
+  position: absolute;
+  /* left: 0; */
+  bottom: 0;
+  height: 3px;
+  width: 6rem;
+  border-radius: 5px;
+  background: linear-gradient(135deg, black, white);
 }
 input[type="number"] {
   margin-top: 2rem;
   border: none;
-  background: transparent;
+  background: white;
   margin: 0;
   padding: 7px 8px;
   font-size: 14px;
   color: inherit;
-  border: 1.5px solid rgb(165, 210, 255);;
-  border-radius: inherit;
+  border: 1.5px solid rgba(2, 126, 251, 1);;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 rgb(70, 70, 69);
+  
 }
 
 input[type="number"]::placeholder {
-  color: rgba(2, 126, 251, 1);;
+  color: rgb(78, 81, 83);;
 }
 
 input[type="number"]:focus {
-  box-shadow: 0 0 1px 0 rgba(2, 126, 251, 1);
+  box-shadow: 0 0 1rem 0 rgb(70, 70, 69);
   border-color: rgba(2, 126, 251, 1);;
   outline: none;
 }

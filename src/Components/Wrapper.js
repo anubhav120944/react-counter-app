@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import styles from "../ClassComponents/Wrapper.module.css"
+import styles from "../Styles/Wrapper.module.css"
 import Counter from './Counter';
 
 
@@ -51,6 +51,12 @@ export default class Wrapper extends Component {
     componentWillUnmount() {
         this.stopCounter();
     }
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        if (this.state.count > 10) {
+            this.deleteCounter()
+            alert("Using COMPONENT_DID_UPDATE  where Counter cannot run more than 10");
+        }
+    }
 
 
     render() {
@@ -58,9 +64,9 @@ export default class Wrapper extends Component {
             <div className={styles.container}>
 
                 {this.state.showCount && <h1><Counter value={this.state.count} /></h1>}
-                <button className={`${styles.custombtn} ${styles.btn}`} onClick={this.startCounter} ><span>Start</span></button>
-                <button className={`${styles.custombtn} ${styles.btn}`} onClick={this.stopCounter} ><span>Stop</span></button>
-                <button className={`${styles.custombtn} ${styles.btn}`} onClick={this.deleteCounter} ><span>Delete</span></button>
+                <button className={`${styles.custombtn} ${styles.btn0}`} onClick={this.startCounter} ><span><b>Start</b></span></button>
+                <button className={`${styles.custombtn} ${styles.btn}`} onClick={this.stopCounter} ><span><b>Stop</b></span></button>
+                <button className={`${styles.custombtn} ${styles.btn2}`} onClick={this.deleteCounter} ><span><b>Delete</b></span></button>
             </div>
         )
     }
