@@ -52,9 +52,9 @@ export default class Wrapper extends Component {
         this.stopCounter();
     }
     componentDidUpdate(prevProps, prevState, snapshot) {
-        if (this.state.count > 10) {
+        if (this.state.count > 20) {
             this.deleteCounter()
-            alert("Using COMPONENT_DID_UPDATE  where Counter cannot run more than 10");
+            alert("Using COMPONENT_DID_UPDATE  where Counter cannot run more than 20");
         }
     }
 
