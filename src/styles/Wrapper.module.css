@@ -1,0 +1,265 @@
+.container {
+    width: 60vw;
+    margin: 40px auto;
+    text-align: center;
+    border: 1.5px solid rgba(2, 126, 251, 1);
+    border-radius: 5px;
+    background-color: rgb(228, 247, 255);
+    box-shadow: 0 0 1rem 0 rgb(70, 70, 69);
+  }
+  h1 {
+    position: relative;
+    text-align: center;
+    color: black;
+    font-size: 50px;
+    padding: 1rem;
+  }
+  
+  button {
+    margin: 20px;
+  }
+  .custombtn {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 120px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-weight: 500;
+    font-size: 1rem;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+      7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    outline: none;
+  }
+  .btn {
+    background: rgb(0, 172, 238);
+    background: linear-gradient(
+      0deg,
+      rgba(0, 172, 238, 1) 0%,
+      rgba(2, 126, 251, 1) 100%
+    );
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+  }
+  .btn span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .btn:before,
+  .btn:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: rgba(2, 126, 251, 1);
+    transition: all 0.5s ease;
+  }
+  .btn:before {
+    height: 0%;
+    width: 2px;
+  }
+  .btn:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn:hover {
+    background: transparent;
+    box-shadow: none;
+  }
+  .btn:hover:before {
+    height: 100%;
+  }
+  .btn:hover:after {
+    width: 100%;
+  }
+  .btn span:hover {
+    color: rgba(2, 126, 251, 1);
+  }
+  .btn span:before,
+  .btn span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: rgba(2, 126, 251, 1);
+    transition: all 0.5s ease;
+  }
+  .btn span:before {
+    width: 2px;
+    height: 0%;
+  }
+  .btn span:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn span:hover:before {
+    height: 100%;
+  }
+  .btn span:hover:after {
+    width: 100%;
+  }
+  
+  
+  /* delete button css  */
+  
+  .btn2 {
+    background: rgb(228, 0, 0);
+    background: linear-gradient(
+      0deg,
+      rgb(238, 87, 0) 0%,
+      red 100%
+    );
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+  }
+  .btn2 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .btn2:before,
+  .btn2:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: red;
+    transition: all 0.5s ease;
+  }
+  .btn2:before {
+    height: 0%;
+    width: 2px;
+  }
+  .btn2:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn2:hover {
+    background: transparent;
+    box-shadow: none;
+  }
+  .btn2:hover:before {
+    height: 100%;
+  }
+  .btn2:hover:after {
+    width: 100%;
+  }
+  .btn2 span:hover {
+    color: red;
+  }
+  .btn2 span:before,
+  .btn2 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: red;
+    transition: all 0.5s ease;
+  }
+  .btn2 span:before {
+    width: 2px;
+    height: 0%;
+  }
+  .btn2 span:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn2 span:hover:before {
+    height: 100%;
+  }
+  .btn2 span:hover:after {
+    width: 100%;
+  }
+  
+  /* start button css */
+  
+  
+  .btn0 {
+    background: rgb(0, 228, 46);
+    background: linear-gradient(
+      0deg,
+      rgb(54, 202, 0) 0%,
+      green 100%
+    );
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+  }
+  .btn0 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .btn0:before,
+  .btn0:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: green;
+    transition: all 0.5s ease;
+  }
+  .btn0:before {
+    height: 0%;
+    width: 2px;
+  }
+  .btn0:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn0:hover {
+    background: transparent;
+    box-shadow: none;
+  }
+  .btn0:hover:before {
+    height: 100%;
+  }
+  .btn0:hover:after {
+    width: 100%;
+  }
+  .btn0 span:hover {
+    color: green;
+  }
+  .btn0 span:before,
+  .btn0 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: green;
+    transition: all 0.5s ease;
+  }
+  .btn0 span:before {
+    width: 2px;
+    height: 0%;
+  }
+  .btn0 span:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn0 span:hover:before {
+    height: 100%;
+  }
+  .btn0 span:hover:after {
+    width: 100%;
+  }
+  
+  
