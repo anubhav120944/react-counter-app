@@ -1,5 +1,4 @@
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,7 +7,8 @@
 .App {
   text-align: center;
   height: 100vh;
-  background-color: rgba(2, 126, 251, 1);
+  /* background-color: rgba(2, 126, 251, 1); */
+  background: linear-gradient(0deg, rgb(0 1 15) 0%, rgb(1 6 66) 100%);
 }
 
 .App-logo {
@@ -45,27 +45,25 @@
     transform: rotate(360deg);
   }
 }
-h5{
+h5 {
   padding-top: 1rem;
   font-size: 15px;
+  color: white;
+
 }
-h2{
+h2 {
   position: relative;
   text-align: center;
-  color: black;
+  color: white;
   font-size: 40px;
   padding-top: 1rem;
+  text-shadow: 0 0 0.05em #fff, 0 0 0.2em #000c58, 0 0 0.3em #027efb;
+
 }
-/* .title {
-  font-size: 25px;
-  font-weight: 500;
-  position: relative;
-} */
+
 .title::before {
-  /* padding-top: 2px; */
   content: "";
   position: absolute;
-  /* left: 0; */
   bottom: 0;
   height: 3px;
   width: 6rem;
@@ -75,24 +73,23 @@ h2{
 input[type="number"] {
   margin-top: 2rem;
   border: none;
-  background: white;
+  background: #000323;
   margin: 0;
   padding: 7px 8px;
   font-size: 14px;
-  color: inherit;
-  border: 1.5px solid rgba(2, 126, 251, 1);;
+  color: white;
+  border: 1.5px solid rgba(2, 126, 251, 1);
   border-radius: 5px;
   box-shadow: 0 0 5px 0 rgb(70, 70, 69);
-  
 }
 
 input[type="number"]::placeholder {
-  color: rgb(78, 81, 83);;
+  color: rgb(255, 255, 255);
 }
 
 input[type="number"]:focus {
   box-shadow: 0 0 1rem 0 rgb(70, 70, 69);
-  border-color: rgba(2, 126, 251, 1);;
+  border-color: rgba(2, 126, 251, 1);
   outline: none;
 }
 input[type="number"]::-webkit-inner-spin-button,

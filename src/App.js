@@ -1,14 +1,10 @@
-import { useState } from 'react';
 import './Styles/App.css';
 import Wrapper from './Components/Wrapper';
 
 function App() {
 
- 
-
   return (
     <div className="App">
-      
       <Wrapper />
     </div>
   );
